@@ -95,7 +95,7 @@ public class Agendamento {
             return true;
         }
         
-        if (!(obj instanceof Agendamento)) { 
+        if (!(objeto instanceof Agendamento)) { 
             return false;
         }
         
