@@ -58,10 +58,14 @@ public class Dentista extends Pessoa {
 	@Override
     public boolean equals(Object objeto) {
 
-        if (this == objeto) return true;
-
-        if (!(obj instanceof Dentista)) return false;
-
+        if (this == objeto) { 
+			return true;
+		}
+		
+        if (!(obj instanceof Dentista)) {
+			return false;
+		}
+		
         Dentista castVerificacao = (Dentista) objeto;
         return cro.equals(castVerificacao.cro);
     }
