@@ -1,11 +1,14 @@
 package teste;
 
+//herda da classe pessoa
 public class Secretaria extends Pessoa {
 	
+	//atributos
 	private int id; 
 	private String usuario; 
 	private String senha;
-	
+
+	//constutor
 	public Secretaria(String nome, String cpf, String telefone, int id,String usuario, String senha) {
 		
 		super(nome,cpf,telefone);
@@ -16,6 +19,7 @@ public class Secretaria extends Pessoa {
 		
 	}
 
+	//-----------metodos do ID--------------
 	public int getId() {
 		return id;
 	}
@@ -23,7 +27,9 @@ public class Secretaria extends Pessoa {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+	//------------------------------------
+
+	//-----------metodos do usuario----------------
 	public String getUsuario() {
 		return usuario;
     }
@@ -31,7 +37,9 @@ public class Secretaria extends Pessoa {
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-	
+	//----------------------------------------
+
+	//-----------metodos da senha--------------
 	public String getSenha() {
 		return senha;	
 	}
@@ -39,6 +47,7 @@ public class Secretaria extends Pessoa {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	//-------------------------------------
 	
 }
 		
