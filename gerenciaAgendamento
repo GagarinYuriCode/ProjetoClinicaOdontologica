@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import classes.Agendamento;
+import classes.StatusAgendamento;
+
+public class GerenciaAgendamento {
+
+	 private ArrayList<Agendamento> agendamentos;
+
+	    public GerenciaAgendamento() {
+	    	agendamentos = new ArrayList<>();
+	    }
+	    
+	    public void cadastrarAgendamento(Agendamento agendamento) {
+	        agendamentos.add(agendamento);
+	        System.out.println("agendamento cadastrado");
+	    }
+	    
+	    public void listarAgendamentos() {
+	        if (agendamentos.isEmpty()) {
+	            System.out.println("sem agendamentos");
+	            return;
+	        }
+
+	        for (int i = 0; i < agendamentos.size(); i++) {
+	        	Agendamento agendamento = agendamentos.get(i);
+	        	
+	            System.out.println("\nlista de agendamento");
+	            System.out.println(agendamento);
+	        }
+	    }
