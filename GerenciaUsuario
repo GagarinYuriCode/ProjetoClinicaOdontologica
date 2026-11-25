@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+import classes.Dentista;
+import classes.Secretaria;
+
+public class GerenciaUsuario {
+
+    private ArrayList<Dentista> dentistas;
+    private ArrayList<Secretaria> secretarias;
+ 
+    public GerenciaUsuario() {
+        dentistas = new ArrayList<>();
+        secretarias = new ArrayList<>();
+    }
+ public void cadastrarDentista(Dentista dentista) {
+
+        for (int i = 0; i < dentistas.size(); i++) {
+        	Dentista existeNoVet = dentistas.get(i);
+        	
+            if (existeNoVet.getCro().equals(dentista.getCro())) {
+                System.out.println("CRO já cadastrado!");
+                return;
+            }
+        }
+        dentistas.add(dentista);
+        System.out.println("Dentista cadastrado");
+    }
+
+public void cadastrarSecretaria(Secretaria secretaria) {
+
+        for (int i = 0; i < secretarias.size(); i++) {
+        	Secretaria existeNoVet = secretarias.get(i);
+
+            if (existeNoVet.getId() == secretaria.getId() || existeNoVet.getUsuario().equals(secretaria.getUsuario())) {
+                System.out.println("Secretaria já cadastrada");
+                return;
+            }
+        }
+        secretarias.add(secretaria);
+        System.out.println("Secretaria cadastrada");
+    }
+}
