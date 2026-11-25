@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import classes.Agendamento;
 import classes.StatusAgendamento;
 
-public class GerenciaAgendamento {
+public class listaAgendamento {
 
 	 private ArrayList<Agendamento> agendamentos;
 
-	    public GerenciaAgendamento() {
+	    public listaAgendamento() {
 	    	agendamentos = new ArrayList<>();
 	    }
 	    
