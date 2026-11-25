@@ -18,7 +18,7 @@ public class GerenciaUsuario {
         	Dentista existeNoVet = dentistas.get(i);
         	
             if (existeNoVet.getCro().equals(dentista.getCro())) {
-                System.out.println("CRO já cadastrado!");
+                System.out.println("CRO já cadastrado");
                 return;
             }
         }
