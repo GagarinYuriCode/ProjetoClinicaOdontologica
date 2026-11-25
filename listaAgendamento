@@ -15,16 +15,16 @@ public class listaAgendamento {
 	        System.out.println("agendamento cadastrado");
 	    }
 	    
-	    public void listarAgendamentos() {
+	    public void VerAgendamentos() {
 	        if (agendamentos.isEmpty()) {
 	            System.out.println("sem agendamentos");
 	            return;
 	        }
 
 	        for (int i = 0; i < agendamentos.size(); i++) {
-	        	Agendamento agendamento = agendamentos.get(i);
+	        	Agendamento agendamentoNoVet = agendamentos.get(i);
 	        	
 	            System.out.println("\nlista de agendamento");
-	            System.out.println(agendamento);
+	            System.out.println(agendamentoNoVet);
 	        }
 	    }
