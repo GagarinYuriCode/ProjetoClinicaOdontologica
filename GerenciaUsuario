@@ -39,4 +39,6 @@ public void cadastrarSecretaria(Secretaria secretaria) {
         secretarias.add(secretaria);
         System.out.println("Secretaria cadastrada");
     }
+//Fazer login dos dentistas, Fazer login das secretarias, Validar CPF, Verifica se ja existe no vet, ver os dentistas.
+
 }
